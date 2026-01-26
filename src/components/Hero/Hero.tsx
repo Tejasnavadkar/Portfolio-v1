@@ -18,7 +18,7 @@ const Hero = () => {
             applications using JavaScript, React and Node.js.
           </p>
           <div className=" mt-4">
-            <a href="/Tejas_Navadkar_Resume.pdf"  target="_blank" className="text-sky-500 border border-sky-400 py-1 px-2  md:px-4 md:py-2 rounded-md cursor-pointer mt-2">Get Resume</a>
+            <a href="/Tejas_Navadkar_Resume.pdf"  target="_blank" className="text-sky-500 border border-sky-400 py-1 px-2  md:px-4 md:py-2 rounded-md cursor-pointer mt-2">Resume</a>
           </div>
         </section>
     </div>
