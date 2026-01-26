@@ -1,4 +1,5 @@
 import type { SkillType } from '../../Data'
+import TitleHead from '../Common/TitleHead'
 
 interface skills {
     skills:SkillType[]
@@ -9,10 +10,7 @@ const Skills = ({skills}:skills) => {
     <div>
         <section id="skills" className="mt-10 px-6">
           <div className="space-y-10">
-            <div className="flex items-center gap-4">
-              <h3 className="text-white text-2xl font-bold">My Skills</h3>
-              <div className="w-[25%] border border-gray-500 "></div>
-            </div>
+            <TitleHead title='My Skills' />
             <div className="space-y-12">
               {skills.map((group, i) => (
                 <div key={i}>

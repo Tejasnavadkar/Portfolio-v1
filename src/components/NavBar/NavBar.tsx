@@ -52,7 +52,7 @@ const NavBar = () => {
     </div>
     
     {/* NavBar */}
-     <nav className="sticky left-0 right-0 backdrop-blur-sm top-0 z-50 flex justify-between items-center py-5 px-11 md:px-8 md:py-2">
+     <nav className="sticky left-0 right-0 top-0 z-50 flex justify-between items-center py-5 px-11 md:px-8 md:py-2">
         <button onClick={()=>handleScroll("home")} className="flex  cursor-pointer items-center space-x-3 text-sky-400 border border-sky-400 px-2 py-1 rounded-md">
           TN
         </button>

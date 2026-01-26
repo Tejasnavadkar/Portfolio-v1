@@ -1,16 +1,14 @@
 import React from 'react'
+import TitleHead from '../Common/TitleHead'
 
 const About = () => {
   return (
     <div>
         <section id="about" className=" pt-15 md:mt-20 space-y-5 md:px-6">
-          <div className="flex items-center gap-4">
-            <h3 className="text-white text-2xl font-bold">About Me</h3>
-            <div className="w-[25%] border border-gray-500 "></div>
-          </div>
+          <TitleHead title='About Me' />
 
           <div className=" ">
-            <p className="flex flex-col gap-6 text-sm sm:text-lg text-gray-400 font-semibold">
+            <div className="flex flex-col gap-6 text-sm sm:text-lg text-gray-400 font-semibold">
               <span>
                 Hello! My name is Tejas Navadkar, and I’m an aspiring MERN stack
                 developer who enjoys building full-stack web applications using
@@ -71,7 +69,7 @@ const About = () => {
                   </ul>
                 </div>
               </div>
-            </p>
+            </div>
           </div>
         </section>
     </div>

@@ -1,5 +1,6 @@
 import ProjectCard from './ProjectCard'
 import type { projectType } from '../../Data'
+import TitleHead from '../Common/TitleHead'
 
 interface projects {
     projects:projectType[]
@@ -10,10 +11,7 @@ const ProjectSection = ({projects}:projects) => {
     <div>
       <section id="projects" className="mt-10 px-6">
           <div className="space-y-10">
-            <div className="flex items-center gap-4">
-              <h3 className="text-white text-2xl font-bold">Projects</h3>
-              <div className="w-[25%] border border-gray-500 "></div>
-            </div>
+           <TitleHead title='Projects' />
 
             {/* project grid */}
             <div className="text-white flex flex-wrap justify-center items-center gap-8 ">

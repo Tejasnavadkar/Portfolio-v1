@@ -1,4 +1,7 @@
 import type { IconType } from "react-icons";
+import { BsTwitter } from "react-icons/bs";
+import { GrLinkedin } from "react-icons/gr";
+import { ImGithub } from "react-icons/im";
 import {
   SiHtml5,
   SiCss3,
@@ -45,6 +48,12 @@ export interface projectType {
     live: string,
     description:string,
     techStack: techStack[],
+  }
+
+  export interface socialType {
+    title: string,
+    icon: IconType,
+    link: string,
   }
 
 export const skills:SkillType[] = [
@@ -203,4 +212,22 @@ export const NavItems = [
         name:"Contact",
         link:"contact"
     },
+]
+
+export const SocialLinks:socialType[] = [
+    {
+        title:"GitHub",
+        icon:ImGithub,
+        link:"https://github.com/Tejasnavadkar"
+    },
+    {
+        title:"LinkedIn",
+        icon:GrLinkedin,
+        link:"https://www.linkedin.com/in/tejas-navadkar/"
+    },
+    {
+        title:"Twitter",
+        icon:BsTwitter,
+        link:"https://x.com/Tejas_Navadkar"
+    }
 ]

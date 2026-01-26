@@ -1,6 +1,8 @@
 import React, { type ReactNode } from "react";
 import "./LayoutWrapper.css";
 import NavBar from "../NavBar/NavBar";
+import Social from "../Common/Social";
+import { SocialLinks } from "../../Data";
 interface LayoutWrapper {
   children?: ReactNode;
 }
@@ -28,6 +30,8 @@ const LayoutWrapper = ({ children }: LayoutWrapper) => {
       <div className="absolute bottom-25 left-25 w-3 h-3 bg-teal-500 rounded-full blur-sm animate-pulse delay-1000 z-0"></div>
       {/* nav */}
       <NavBar />
+
+       <Social socials={SocialLinks}/>
 
       {/* Your actual content (childrens) */}
       <div className=" scroll-container absolute h-full py-18  overflow-y-auto overflow-x-hidden scrollbar w-full z-10 ">

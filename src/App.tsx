@@ -6,7 +6,7 @@ import Hero from "./components/Hero/Hero";
 import LayoutWrapper from "./components/Layout/LayoutWrapper";
 import ProjectSection from "./components/Projects/ProjectSection";
 import Skills from "./components/Skills/Skills";
-import { projects, skills } from "./Data";
+import { projects, skills, SocialLinks } from "./Data";
 function App() {
 
   
@@ -29,7 +29,7 @@ function App() {
         <Contact/>
 
         {/* footer */}
-        <Footer/>
+        <Footer socials={SocialLinks}/>
       </LayoutWrapper>
     </>
   );
