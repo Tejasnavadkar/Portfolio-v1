@@ -1,4 +1,3 @@
-import React from 'react'
 import type { socialType } from '../../Data'
 
 export interface socialsType {

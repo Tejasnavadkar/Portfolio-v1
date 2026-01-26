@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { CiMenuFries } from 'react-icons/ci'
 import { RiCloseLargeFill } from 'react-icons/ri'
 import { NavItems } from '../../Data'

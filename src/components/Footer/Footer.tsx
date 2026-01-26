@@ -1,4 +1,3 @@
-import React from 'react'
 import type { socialsType } from '../Common/Social'
 
 

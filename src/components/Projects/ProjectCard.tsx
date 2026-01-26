@@ -1,4 +1,3 @@
-import React from 'react'
 import { FaGithub, FaLink, FaRegFolder } from 'react-icons/fa';
 
 interface ProjectItem {

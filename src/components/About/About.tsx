@@ -1,4 +1,3 @@
-import React from 'react'
 import TitleHead from '../Common/TitleHead'
 
 const About = () => {
