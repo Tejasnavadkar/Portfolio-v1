@@ -44,8 +44,8 @@ export interface SkillType {
 
 export interface projectType {
     name: string,
-    github: string,
-    live: string,
+    github?: string,
+    live?: string,
     description:string,
     techStack: techStack[],
   }

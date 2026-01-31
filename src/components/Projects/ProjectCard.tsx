@@ -2,8 +2,8 @@ import { FaGithub, FaLink, FaRegFolder } from 'react-icons/fa';
 
 interface ProjectItem {
   name: string;
-  github: string;
-  live: string;
+  github?: string;
+  live?: string;
   description: string;
   techStack: string[];
 }
@@ -15,8 +15,8 @@ const ProjectCard = ({project}:{project:ProjectItem}) => {
               <div className="flex justify-between">
                 <div><FaRegFolder size={24} className='text-sky-500' /></div>
                 <div className="flex gap-2">
-                  <a href={`${project?.github}`} target='_blank' className="cursor-pointer"><FaGithub /></a>
-                  <a href={`${project?.live}`} target='_blank' className="cursor-pointer"><FaLink /></a>
+                  { project?.github && <a href={`${project?.github}`} target='_blank' className="cursor-pointer"><FaGithub /></a>}
+                  { project?.live   && <a href={`${project?.live}`} target='_blank' className="cursor-pointer"><FaLink /></a>}
                 </div>
               </div>
 
